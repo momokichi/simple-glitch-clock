@@ -27,7 +27,7 @@ class Clock extends React.Component {
 
   tick () {
     this.setState({
-      ymd : dayjs().format('YYYY / MM / DD'),
+      ymd : dayjs().format('YYYY / MM / DD (ddd)'),
       hms : dayjs().format('HH:mm:ss')
     })
   }
