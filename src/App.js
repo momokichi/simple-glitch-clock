@@ -9,7 +9,7 @@ class Clock extends React.Component {
   constructor(props) {
     super(props)
     this.state={
-      ymd : dayjs().format('YYYY / MM / DD'),
+      ymdd : dayjs().format('YYYY / MM / DD (ddd)'),
       hms : dayjs().format('HH:mm:ss')
     }
   }
@@ -27,7 +27,7 @@ class Clock extends React.Component {
 
   tick () {
     this.setState({
-      ymd : dayjs().format('YYYY / MM / DD (ddd)'),
+      ymdd : dayjs().format('YYYY / MM / DD (ddd)'),
       hms : dayjs().format('HH:mm:ss')
     })
   }
@@ -35,8 +35,8 @@ class Clock extends React.Component {
   render() {
     return (
     <div>
-      <p>{this.state.ymd}</p>
-      <p>{this.state.hms}</p>
+      <div id="ymdd">{this.state.ymdd}</div>
+      <div id="hms">{this.state.hms}</div>
     </div>
     )
   }
