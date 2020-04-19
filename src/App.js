@@ -45,11 +45,13 @@ class Clock extends React.Component {
 function App() {
   return (
     <div className="App">
+      <GlitchClip duration='5s'>
       <header className="App-header">
-      <GlitchClip>
-        <Clock />
+        <GlitchClip duration='2s'>
+          <Clock />
         </GlitchClip>
       </header>
+      </GlitchClip>
     </div>
   );
 }
