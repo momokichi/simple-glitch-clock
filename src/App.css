@@ -13,9 +13,29 @@
 }
 
 #ymdd {
-  font-size: 60px;
+  font-size: 24px;
 }
 
 #hms {
-  font-size: 180px;
+  font-size: 64px;
+}
+
+@media (min-width: 768px) {
+  #ymdd {
+    font-size: 48px;
+  }
+
+  #hms {
+    font-size: 128px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #ymdd {
+    font-size: 96px;
+  }
+
+  #hms {
+    font-size: 256px;
+  }
 }
