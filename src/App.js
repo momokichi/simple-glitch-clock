@@ -35,8 +35,8 @@ class Clock extends React.Component {
   render() {
     return (
     <div>
-      <div id="ymdd">{this.state.ymdd}</div>
       <div id="hms">{this.state.hms}</div>
+      <div id="ymdd">{this.state.ymdd}</div>
     </div>
     )
   }
