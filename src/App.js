@@ -45,9 +45,9 @@ class Clock extends React.Component {
 function App() {
   return (
     <div className="App">
-      <GlitchClip duration='5s'>
+      <GlitchClip duration='12s'>
       <header className="App-header">
-        <GlitchClip duration='2s'>
+        <GlitchClip duration='4s'>
           <Clock />
         </GlitchClip>
       </header>
